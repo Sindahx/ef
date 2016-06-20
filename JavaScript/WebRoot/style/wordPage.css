@@ -1,0 +1,200 @@
+
+
+li {
+    float: left;
+}
+
+.load_des{
+	background:url(http://cnc1.ef-cdn.com/_imgs/tts/tts_btn_listen_loading.gif) 4px 4px no-repeat;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	color: #ddd;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	text-shadow: #333 0 1px 0;
+	cursor: pointer;
+}
+
+table.gridtable {
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	height: 800 : px;
+	border-collapse: collapse;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: white;
+	border-left-width: thin;
+	border-right-width: thin;
+	background-color: #ffffff;
+	width: 200px;
+}
+
+#nb-right-pan-content-table {
+	color: #666666;
+}
+
+.nb-word-list-table {
+	border-collapse: collapse;
+	width: 100%;
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+tr.ui-draggable {
+	background-color: #F2F2F2;
+	color: #262626;
+	border-style: solid;
+	border-bottom-width: thin;
+	border-top-width: thin;
+	border-color: white;
+}
+
+#content-table-scroll {
+	position: relative;
+	overflow: hidden;
+}
+
+.content-table {
+	overflow: hidden;
+	position: relative;
+	height: auto;
+}
+
+/* button 
+---------------------------------------------- */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */ *
+	display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/ 100% Arial, Helvetica, sans-serif;
+	padding: .5em .7em .55em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.fp-container span {
+	display: block;
+	padding-left: 28px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.nb-word-list-table .nb-col-player {
+	width: 25px;
+	padding-left: 5px;
+}
+
+.fp-container-disabled {
+	background-position: 0, -50px;
+}
+
+.fp-container {
+	background: url(http://cnc2.ef-cdn.com/_imgs/tts/tts_btn_listen2.png) 0
+		0 no-repeat;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	color: #ddd;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	text-shadow: #333 0 1px 0;
+	cursor: pointer;
+}
+
+.fp-container-loading {
+	background:
+		url(http://cnc1.ef-cdn.com/_imgs/tts/tts_btn_listen_loading.gif) 4px
+		4px no-repeat;
+}
+
+/* white */
+.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),
+		to(#ededed) );
+	background: -moz-linear-gradient(top, #fff, #ededed);
+	filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr =
+		'#ffffff', endColorstr = '#ededed' );
+}
+
+.white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff),
+		to(#dcdcdc) );
+	background: -moz-linear-gradient(top, #fff, #dcdcdc);
+	filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr =
+		'#ffffff', endColorstr = '#dcdcdc' );
+}
+
+.white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed),
+		to(#fff) );
+	background: -moz-linear-gradient(top, #ededed, #fff);
+	filter: progid : DXImageTransform.Microsoft.gradient ( startColorstr =
+		'#ededed', endColorstr = '#ffffff' );
+}
+
+span {
+	text-align: center;
+}
+
+p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.loader{
+	position: fixed;
+}
+
+.buttom{
+	width: 100%;
+	height:40px;
+	bottom:5px;
+	text-align: center;
+	margin-bottom: 25px;
+}

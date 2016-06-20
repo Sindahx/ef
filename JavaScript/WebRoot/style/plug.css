@@ -1,0 +1,231 @@
+
+ul.audioul li.right {
+    width: 306px;
+    margin-left: 5px;
+}
+/*search content*/
+div.line {
+	border-top: solid 1px #cccccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+span.bigheadword span.hw {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	float: left;
+	margin-top: 2px;
+	margin-left: 3px;
+}
+
+ul.audioul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: 24px;
+}
+.audioul :first-child{
+	width: 24px;
+}
+
+.audioul li {
+	float: left;
+}
+
+
+.audioplaceholder {
+    width: 24px;
+    height: 24px;
+    display: block;
+    /* background: url(http://cnc1.ef-cdn.com/_imgs/Translator3/Translator_sprite.png) no-repeat 0px -1296px; */
+    background: url(http://cnc1.ef-cdn.com/_imgs/tts/tts_btn_listen2.png) 0 0 no-repeat;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+span.addtonotebook {
+	float: right;
+	display: none;
+	font-style: italic;
+	color: Gray;
+}
+
+span.root .hw {
+	color: #0055a3;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/*guideword block*/
+div.guidewordblock {
+	margin-top: 0px;
+	margin-left: 24px;
+}
+
+div.senseblock span.sensetranslation {
+	font-size: 12px;
+	color: #00837c;
+}
+
+div.senseblock span.reference a {
+	color: #006eb3;
+	text-decoration: underline;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+div.senseblock span.reference a:hover {
+	
+}
+
+ul.senseul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.senseul li {
+	float: left;
+}
+
+
+
+
+ul.senseul li.right {
+	width: 92%;
+	margin-left: 5px;
+}
+
+/*example block*/
+div.exampleblock {
+	line-height: 24px;
+	margin-left: 10px;
+	margin-top:10px;
+}
+
+div.exampleblock span.example {
+	font-style: normal;
+}
+
+div.exampleblock span.exampletranslation {
+	font-size: 12px;
+	color: #00837c;
+	clear: both;
+}
+
+/*extraexample block*/
+div.extraexampleblock {
+	line-height: 24px;
+}
+
+div.extraexampleblockcontent {
+	margin-left: 11px;
+}
+
+div.extraexampleblock span.extraexampletitle {
+	
+}
+
+div.extraexampleblock span.extraexample {
+	font-style: normal;
+}
+
+/*phrase block*/
+span.bigphrase span.root .phrase {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-top: 2px;
+	margin-left: 3px;
+	display: block;
+	width: 90%;
+}
+
+span.root .phrase {
+	color: #0055a3;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/*Idiom block*/
+div.idiomblock {
+	
+}
+
+span.bigidiom span.root .phrase {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-top: 2px;
+	margin-left: 3px;
+	display: block;
+	width: 90%;
+}
+
+/*Runon block*/
+span.bigrunon span.root .w {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-top: 2px;
+	margin-left: 3px;
+	display: block;
+	width: 90%;
+}
+
+span.root .w {
+	color: #0055a3;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/*phrase verb block*/
+span.bigphrasalverb span.root .phrase {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-top: 2px;
+	margin-left: 3px;
+	display: block;
+	width: 90%;
+}
+
+/*===================================================================================================================*/
+	/**** /school/_styles/flashcard/flashcard.css ****/ /*common*/
+.clear {
+	clear: both;
+}
+
+/*============================================================================================================================*/
+	/* CSS Sprites - End */ /**** /_styles/header/header-static.css ****/
+	/*
+http://yuilibrary.com/yui/docs/cssreset/
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+body {
+	font: 400 12px Arial, Helvetica, sans-serif;
+}
+/*====================================*/
