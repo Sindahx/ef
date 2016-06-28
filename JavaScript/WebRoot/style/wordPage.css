@@ -198,3 +198,18 @@ p {
 	text-align: center;
 	margin-bottom: 25px;
 }
+
+.split{
+	margin: 5px;	
+}
+
+.word_split{
+	margin-left: 25px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.word_sound{
+	margin-left: 25px;
+	text-align: center;
+}

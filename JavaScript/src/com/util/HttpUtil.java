@@ -51,4 +51,19 @@ public class HttpUtil {
 		return result;
 	}
 	
+	public static void main(String[] args) {
+		String word = "dictionary";
+		String url = "http://www.dictionaryapi.com/api/v1/references/collegiate/xml/"+word+"?key=7755bf95-dd22-436b-89a7-1be9f384f09f";
+		
+		try {
+			String str = sendGet(url);
+			
+			System.err.println(str);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 }

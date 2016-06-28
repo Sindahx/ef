@@ -38,5 +38,16 @@
 		<servlet-name>Demo3</servlet-name>
 		<url-pattern>/Demo3</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Split</servlet-name>
+		<servlet-class>com.servlet.Split</servlet-class>		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Split</servlet-name>
+		<url-pattern>/split</url-pattern>
+	</servlet-mapping>
+	
   
 </web-app>

@@ -98,6 +98,7 @@ function loadDes(obj) {
 	if (b == desid) {
 		$(".word_des").remove();
 		desid = null;
+		splitid = null;
 		return;
 	}else{
 		$(obj).prepend("<a class=\"load_des\"></a>");
@@ -125,7 +126,7 @@ function loadDes(obj) {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			$(obj).parent().after("<tr class=\"word_des\"><td colspan=\"3\">"+ xmlhttp.responseText + "</td></tr>");
 			desid = b;
-
+			splitid = null;
 			/*给加载的a标签添加监听事件*/
 			$('.audioplaceholder').click(function() {
 				playVoice(this);
@@ -148,6 +149,54 @@ function loadDes(obj) {
 	xmlhttp.open("GET", url, true);
 	xmlhttp.send();
 
+}
+
+var splitid = null;
+
+function loadSplit(obj){
+	var id =  $(obj).attr("id");
+	
+	if (id == splitid) {
+		$(".word_des").remove();
+		splitid = null;
+		desid = null;
+		return;
+	}else{
+		$(obj).prepend("<a class=\"load_des\"></a>");
+	}
+	
+	$(".word_des").remove();
+
+	var url = "/JavaScript/split?word=" + id;
+	
+	var xmlhttp;
+
+	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp = new XMLHttpRequest();
+	} else {// code for IE6, IE5
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange = function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			$(obj).parent().after("<tr class=\"word_des\"><td colspan=\"3\">"+ xmlhttp.responseText + "</td></tr>");
+			splitid = id;
+			desid = null;
+			/*计算屏幕宽度*/
+			var div_width = $(".exampleblock").width();
+			var li_width = 0;
+			if (div_width > 325) {
+				li_width = div_width - 52;
+			} else {
+				li_width = div_width - 67;
+			}
+			$(".right").css("width", li_width);
+			
+			$(".load_des").remove();
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
 }
 
 function loadSwf(obj, str) {
@@ -207,7 +256,7 @@ function build_page(data){
 		var w = obj.Words[i];
 //		var str = "<tr id=\"tr_"+i+"\" class=\"ui-draggable click_tr\">";
 		var str = "<tr>";
-		str+= "<td><a id=\"mp3_img"+i+"\" class=\"fp-container\" onclick=\"loadSwf(this,'"+w.AudioPath+"');\"></a></td><td>" + w.WordText + "</td><td id =\""+w.EtownDefinition_id+"\"  onclick=\"loadDes(this)\">" + w.Translation + "</td>";
+		str+= "<td><a id=\"mp3_img"+i+"\" class=\"fp-container\" onclick=\"loadSwf(this,'"+w.AudioPath+"');\"></a></td><td id=\""+w.WordText+"\" onclick=\"loadSplit(this)\">" + w.WordText + "</td><td id =\""+w.EtownDefinition_id+"\"  onclick=\"loadDes(this)\">" + w.Translation + "</td>";
 		str+="</tr>";
 		if (page_word == null) {
 			page_word = str;
