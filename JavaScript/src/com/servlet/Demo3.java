@@ -20,6 +20,9 @@ public class Demo3 extends HttpServlet{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * jsoup 读取在线 html
+	 */
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub

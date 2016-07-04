@@ -15,7 +15,6 @@ import org.jsoup.parser.Parser;
 import org.jsoup.parser.XmlTreeBuilder;
 import org.jsoup.select.Elements;
 
-import com.dto.word.Sound;
 import com.util.HttpUtil;
 
 public class Split extends HttpServlet {
@@ -32,6 +31,9 @@ public class Split extends HttpServlet {
 
 	}
 
+	/**
+	 * jsoup 读取字符串
+	 */
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
